@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Local-first Team Lead dashboard prototype for DocuSign CORE.">
+  <title>CORE TL Control Center</title>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="brand">CORE TL<br><span>Control Center</span></div>
+      <nav id="nav" aria-label="Main navigation"></nav>
+      <div class="privacy-note">Local prototype<br>No data is uploaded to GitHub.</div>
+    </aside>
+    <main class="main">
+      <header class="topbar">
+        <div>
+          <h1 id="page-title">Dashboard</h1>
+          <p id="page-subtitle">Team overview using synthetic demo data</p>
+        </div>
+        <div class="actions">
+          <span id="mode-badge" class="badge">DEMO DATA</span>
+          <button id="load-demo" type="button">Reload demo</button>
+          <button id="clear-data" type="button" class="danger">Clear local data</button>
+        </div>
+      </header>
+      <section id="content" aria-live="polite"></section>
+    </main>
+  </div>
+  <script src="assets/app.js"></script>
+</body>
+</html>
